@@ -4,7 +4,6 @@ html, body {
   background-color: #daf5ff;
 }
 
-
 .container {
     position: relative;
   display: flex;
@@ -71,7 +70,7 @@ html, body {
   position: absolute;
   transition: all 1s;
 }
-
+/*
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -80,7 +79,7 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
+*/
 .main-circle-hover {
   width: 400px;
   aspect-ratio: 1;
@@ -128,6 +127,7 @@ html, body {
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 275ms ease;
+  overflow: visible;
 }
 
 .name h1:hover,
@@ -154,7 +154,6 @@ html, body {
     font-size: 20px;
   text-align: center;
 }
-
 
 footer {
   position: absolute;
@@ -195,4 +194,13 @@ footer {
     opacity: 0.7;
     animation-delay: 5s;
     filter: hue-rotate(-20deg);
+  }
+
+  @media screen and (max-width: 992px) {
+    .name h1 {
+      font-size: 32px;
+    }
+    .description{
+        font-size: 18px;
+    }
   }
