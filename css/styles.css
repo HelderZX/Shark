@@ -99,11 +99,32 @@ html, body {
   width: 300px;
 }
 
+.main-circle-hover:hover ~ .main-image #shark-image{
+    display: none;
+}
+
+.main-circle-hover:hover ~ .main-image #shark-photo{
+    display: inline-block;
+}
+
 .main-image {
   position: absolute;
-  width: 80%;
   transition: width 1s;
   z-index: 1;
+}
+
+.main-image #shark-image{
+    display: inline-block;
+    width: 350px;
+}
+
+.main-image #shark-photo{
+    display: none;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    aspect-ratio: 1;
 }
 
 .name,
@@ -146,7 +167,7 @@ html, body {
 }
 
 .name h1 {
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
 }
 
